@@ -18,7 +18,23 @@
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
   "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"],
+  "python.pythonPath": "python3",
+  "snippets.ultisnips.pythonVersion": 3,
+  //CocCommand python.setInterpreter
   //golang
+  "eslint.autoFixOnSave": true,
+  "eslint.filetypes": [
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "javascriptreact",
+    "typescript.tsx"
+  ],
+  "tsserver.formatOnType": true,
+  "coc.preferences.formatOnType": true,
+  "diagnostic.errorSign": "•",
+  "diagnostic.warningSign": "•",
+  "diagnostic.infoSign": "•",
 
   //
   //"languageserver": {

@@ -60,7 +60,6 @@ let g:material_terminal_italics = 1
 "colorscheme material
 "*****************************************
 
-
 "*************** zenburn THEME *************
 "let g:material_theme_style = 'ocean'
 "colorscheme zenburn
@@ -93,10 +92,7 @@ let g:material_terminal_italics = 1
 "****************************************
 
 "******* nord theme *****
-"
-
 "colorscheme nord
-
 
 "packadd! dracula
 "syntax enable
@@ -124,22 +120,18 @@ let g:material_terminal_italics = 1
 "let g:sonokai_enable_italic = 1 
 "let g:sonokai_disable_italic_comment = 1
 "colorscheme sonokai
-
 "************************************* 
 
-
 "************** Edge Theme ****************
-let g:edge_style = 'neon'
-let g:edge_enable_italic = 1
-let g:edge_disable_italic_comment = 1
-colorscheme edge
-set background=light
+"let g:edge_style = 'neon'
+"let g:edge_enable_italic = 1
+"let g:edge_disable_italic_comment = 1
+"colorscheme edge
+"set background=light
 "************** Forest Night Theme ********
-"let g:forest_night_enable_italic = 1
-"let g:forest_night_disable_italic_comment = 1
-"colorscheme forest-night
-
-
+let g:forest_night_enable_italic = 1
+let g:forest_night_disable_italic_comment = 1
+colorscheme forest-night
 
 "****************** airline ***************
 let g:airline_powerline_fonts = 1
@@ -164,7 +156,10 @@ set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
+
+" open nerdtree on startup and go to main window
 autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
 autocmd BufEnter * NERDTreeMirror
 nmap <silent> <C-b> :NERDTreeToggle<CR>
 
@@ -190,7 +185,15 @@ let g:go_info_mode='gopls'
 "set runtimepath+=$GOROOT/misc/vim
 "filetype plugin indent on
 "syntax on
-
+"
+"
+"
+" Uncomment the following to have Vim jump to the last position when
+" reopening a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    \| exe "normal! g'\"" | endif
+endif
 
 "Stuff for GoLang"
 "filetype off
@@ -220,6 +223,10 @@ let g:python_highlight_all = 1
 "highlight Normal ctermbg=Blue
 hi Search ctermfg=Yellow ctermbg=NONE cterm=bold,underline
 
+"python
+if has('python3')
+endif
+let g:python3_host_prog = expand('/usr/bin/python3.7')
 
 "react
 let g:jsx_ext_required = 1
@@ -228,3 +235,9 @@ let g:jsx_ext_required = 1
 nnoremap dw gd[{V%::s/<C-R>///gc<left><left><left>
 nnoremap dq gD:%s/<C-R>///gc<left><left><left>
 
+
+if exists('+termguicolors')
+  let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif

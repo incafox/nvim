@@ -15,6 +15,8 @@ nnoremap <Leader>; $a;<Esc>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 
+" hover info
+nnoremap <silent> K :call CocAction('doHover')<CR>
 
 
 " shorter commands
