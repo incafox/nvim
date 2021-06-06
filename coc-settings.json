@@ -11,15 +11,16 @@
   //],
   //slint de mierda
   //"eslint.options": {},
-  "coc.preferences.formatOnSaveFiletypes": ["*"],
+  //"coc.preferences.formatOnSaveFiletypes": ["javascript", "javascriptreact","python","typescriptreact","typescript" ,"css", "go"],
+  "coc.preferences.formatOnSaveFiletypes": [ "javascriptreact","python","typescriptreact","typescript" ,"css", "go"],
   // python config
-  "python.jediEnabled": false,
+  //"python.jediEnabled": false,
   "python.linting.pylintArgs": ["--extension-pkg-whitelist=cv2"],
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
-  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"],
-  "python.pythonPath": "python3",
-  "snippets.ultisnips.pythonVersion": 3,
+  "python.linting.enabled": false,
+  "python.linting.pylintEnabled": false,
+  //"snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"],
+  "python.pythonPath": "python",
+  //"snippets.ultisnips.pythonVersion": 3,
   //CocCommand python.setInterpreter
   //golang
   "eslint.autoFixOnSave": true,
@@ -30,20 +31,20 @@
     "javascriptreact",
     "typescript.tsx"
   ],
+  "eslint.options": {
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  },
+  "diagnostic.errorSign": "•",
+  "diagnostic.warningSign": "•",
+  "diagnostic.infoSign": "•",
   "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": true,
   "diagnostic.errorSign": "•",
   "diagnostic.warningSign": "•",
   "diagnostic.infoSign": "•",
-
-  //
-  //"languageserver": {
-  //  "golang": {
-  //    "command": "gopls",
-  //    "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
-  //    "filetypes": ["go"]
-  //  }
-  // }
 
   "languageserver": {
     "golang": {

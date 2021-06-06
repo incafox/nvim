@@ -58,6 +58,9 @@ nnoremap <Leader>gl :Gpull<cr>
 
 nnoremap <Leader>x :!node %<cr>
 
+inoremap <C-Space> <C-l>
+
+
 set splitright
 function! OpenTerminal()
   " move to right most buffer
@@ -96,3 +99,9 @@ nnoremap <C-t> :call OpenTerminal()<CR>
 
 
 nmap <F8> :TagbarToggle<CR>
+
+nmap <silent>xx :bw<cr>
+" next tab
+nmap <Tab> :bn<cr>
+"close buffer aka tab
+"nmap <Tab> :bn<cr>

@@ -102,7 +102,7 @@ let NERDTreeDirArrows=1
 let NERDTreeShowLineNumbers=0
 let NERDTreeMapOpenInTab='\t'
 let g:javascript_plugin_flow = 1
-let g:NERDTreeWinSize=27
+let g:NERDTreeWinSize=33
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsSnippetDirectories=[$HOME.'/config/.vim/UltiSnips']
 let g:UltiSnipsExpandTrigger="<tab>"

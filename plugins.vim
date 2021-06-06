@@ -16,10 +16,9 @@ Plug 'vim-airline/vim-airline'
 "tagbar
 Plug 'majutsushi/tagbar'
 
-
 " Denite - Fuzzy finding, buffer management
 Plug 'Shougo/denite.nvim'
-
+Plug 'ctrlpvim/ctrlp.vim'
 " Themes
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
@@ -31,11 +30,41 @@ Plug 'overcache/NeoSolarized'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'bluz71/vim-moonfly-colors'
 Plug 'arcticicestudio/nord-vim'
-Plug 'sainnhe/forest-night'
+Plug 'sainnhe/everforest'
+Plug 'doums/darcula'
+
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'sainnhe/sonokai'
 Plug 'sainnhe/edge'
+Plug 'tomasr/molokai'
+Plug 'sickill/vim-monokai'
+Plug 'sainnhe/gruvbox-material'
+Plug 'lifepillar/vim-solarized8'
+Plug 'romainl/flattened'
+Plug 'rakr/vim-one'
+Plug 'joshdick/onedark.vim'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'ayu-theme/ayu-vim'
+Plug 'cormacrelf/vim-colors-github'
 
+"Plug 'itchyny/lightline.vim'
+
+"icons
+Plug 'ryanoasis/vim-devicons'
+
+"emberjs
+Plug 'andrewradev/ember_tools.vim'
+
+"ruby on rails
+Plug 'tpope/vim-rails'
+Plug 'vim-ruby/vim-ruby'
+" nerd commetns
+Plug 'preservim/nerdcommenter'
+Plug 'tpope/vim-commentary'
+
+"spotify xd
+Plug 'srishanbhattarai/neovim-spotify', { 'do': 'bash install.sh', 'on': ['Spotify'] }
 
 "Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
