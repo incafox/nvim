@@ -13,11 +13,32 @@ Plug 'flowtype/vim-flow'
 "lubeck
 Plug 'vim-airline/vim-airline'
 
+"telescope
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
+"snap finder 
+Plug 'camspiers/snap'
+
+"fzf
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
+Plug 'dyng/ctrlsf.vim'
+
 "tagbar
 Plug 'majutsushi/tagbar'
+" Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 
 " Denite - Fuzzy finding, buffer management
-Plug 'Shougo/denite.nvim'
+" Plug 'Shougo/denite.nvim'
+if has('nvim')
+  Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/denite.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 Plug 'ctrlpvim/ctrlp.vim'
 " Themes
 Plug 'morhetz/gruvbox'
@@ -32,6 +53,11 @@ Plug 'bluz71/vim-moonfly-colors'
 Plug 'arcticicestudio/nord-vim'
 Plug 'sainnhe/everforest'
 Plug 'doums/darcula'
+Plug 'drewtempelmeyer/palenight.vim'
+Plug 'ghifarit53/tokyonight-vim'
+Plug 'jacoborus/tender.vim'
+Plug 'embark-theme/vim', { 'as': 'embark' }
+
 
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'sainnhe/sonokai'
@@ -48,7 +74,18 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'ayu-theme/ayu-vim'
 Plug 'cormacrelf/vim-colors-github'
 
+Plug 'projekt0n/github-nvim-theme'
+Plug 'drewtempelmeyer/palenight.vim'
+
+
 "Plug 'itchyny/lightline.vim'
+" vim keyword
+Plug 'pangloss/vim-javascript'
+
+Plug 'HerringtonDarkholme/yats.vim'
+
+" search words
+Plug 'dyng/ctrlsf.vim'
 
 "icons
 Plug 'ryanoasis/vim-devicons'
@@ -81,7 +118,7 @@ Plug 'benmills/vimux'
 Plug 'christoomey/vim-tmux-navigator'
 
 " autocomplete
-Plug 'sirver/ultisnips'
+" Plug 'sirver/ultisnips'
 " Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
@@ -113,5 +150,16 @@ Plug 'fatih/vim-go'
 "react
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
+
+" python
+" Plugin 'vim-scripts/indentpython.vim'bbbbbb
+Plug 'nvie/vim-flake8'
+
+"prettier
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+
 
 call plug#end()

@@ -52,30 +52,49 @@ endif
 "  set termguicolors
 "endif
 
-"let g:material_terminal_italics = 1
+" let g:material_terminal_italics = 1
 "let g:material_theme_style = 'default' | 'palenight' | 'ocean' | 'lighter' | 'darker' | 'default-community' | 'palenight-community' | 'ocean-community' | 'lighter-community' | 'darker-community'
 
-"let g:material_theme_style ='lighter'
-"let g:material_theme_style = 'palenight'
-"let g:material_theme_style = 'ocean'
-"let g:material_terminal_italics = 1
-"colorscheme material
+" let &t_ZH="\e[3m"
+" let &t_ZR="\e[23m"
+" Fix italics in Vim
+if !has('nvim')
+  let &t_ZH="\e[3m"
+  let &t_ZR="\e[23m"
+endif
+" let g:material_theme_style ='lighter'
+" let g:material_theme_style = 'palenight'
+" let g:material_theme_style = 'ocean'
+" let g:material_terminal_italics = 1
+" colorscheme material
 "*****************************************
-
+"
+"**** theme palenight ****
+" set background=dark
+" " " Italics for my favorite color scheme
+" let g:palenight_terminal_italics=1
+" colorscheme palenight
+" highlight Comment cterm=italic
+" let g:airline_theme = "palenight"
+" " " " Italics for my favorite color scheme
+" let g:palenight_terminal_italics=1
+"
+"
 "*************** zenburn THEME *************
 "let g:material_theme_style = 'ocean'
 "syntax enable
 "colorscheme zenburn
 "set background=light
 "*******************************************
-
+"********** github theme new
+" colorscheme github-theme
+"*********
 "*********** seoul 256 theme **********************
 " Unified color scheme (default: dark)
 
-"syntax enable
-"syntax on
-"colo seoul256
-
+" syntax enable
+" syntax on
+" colo seoul256
 
 " Light color scheme
 "colo seoul256-light
@@ -102,12 +121,13 @@ endif
 "colorscheme nord
 
 "packadd! dracula
-"syntax enable
-"colorscheme dracula
-"syntax on
-"set ruler
-"set number
-"color dracula " turn-on dracula color scheme
+ " syntax enable
+ " colorscheme dracula
+ " syntax on
+" set ruler
+" set number
+" color dracula " turn-on dracula color scheme
+"
 "*************** SOLARIZED THEME  no funciona xd *********
 "syntax enable
 "set background=dark
@@ -127,43 +147,48 @@ endif
 "set background=light
 "colorscheme solarized8_low
 
-
-
 "nel colorscheme flattened_dark
 
 "******* sonokai theme ********* 
-"let g:sonokai_style = 'andromeda'
-"let g:sonokai_style = 'atlantis'
-"let g:sonokai_style = 'shusia'
-"let g:sonokai_style = 'maia'
-"let g:sonokai_enable_italic = 1 
-"let g:sonokai_disable_italic_comment = 1
-"colorscheme sonokai
+" let g:sonokai_style = 'andromeda'
+" let g:sonokai_style = 'atlantis'
+" let g:sonokai_style = 'shusia'
+" let g:sonokai_style = 'maia'
+" let g:sonokai_style = 'espresso'
+" let g:sonokai_enable_italic = 1 
+" let g:sonokai_disable_italic_comment = 1
+" colorscheme sonokai
+
 "************************************* 
-
 let g:ctrlp_custom_ignore = '\v[\/](.cache|.config|.mozilla|.zoom|node_modules|target|dist)|(\.(swp|ico|git|svn))$'
-
-
 "************** Edge Theme ****************
-"let g:edge_style = 'neon'
-"let g:edge_enable_italic = 1
-"let g:edge_enable_italic_comment = 1
-"colorscheme edge
-"set background=light
+" let g:edge_style = 'neon'
+" let g:edge_style = 'aura'
+let g:edge_enable_italic = 1
+let g:edge_enable_italic_comment = 1
+colorscheme edge
+" set background=light
 
 "************ darcula intellij *****  
-colorscheme darcula
-set termguicolors
-let g:lightline = { 'colorscheme': 'darculaOriginal' }
+" colorscheme darcula
+" set termguicolors
+" let g:lightline = { 'colorscheme': 'darculaOriginal' }
 
 
 "************** Forest Night Theme ********
-"set background=dark
-"let g:everforest_enable_italic = 1
-"let g:everforest_disable_italic_comment = 1
-"let g:everforest_background = 'soft'
-"colorscheme everforest
-
+" set background=dark
+" let g:everforest_enable_italic = 1
+" let g:everforest_disable_italic_comment = 1
+" let g:everforest_background = 'soft'
+" colorscheme everforest
+" let g:javascript_plugin_jsdoc = 1
+" let g:typescript_conceal_function             = "ƒ"
+" let g:typescript_conceal_null                 = "ø"
+" let g:typescript_conceal_undefined            = "¿"
+" let g:typescript_conceal_this                 = "@"
+" let g:typescript_conceal_return               = "⇚"
+" let g:typescript_conceal_prototype            = "¶"
+" let g:typescript_conceal_super                = "Ω"
 
 "****** github theme ****
 "" use a slightly darker background, like GitHub inline code blocks
@@ -229,27 +254,31 @@ let g:indentLine_char_list = ['⎸']
 "set background=light
 "************************
 "********* VIM ONE mala syntaxis **********
-"colorscheme one
+" colorscheme one
 "set background=dark " for the dark version
 " set background=light " for the light version
 
 "************ONE DARK*********
 
-"syntax on
-"let g:onedark_terminal_italics=1
-"colorscheme onedark
-"let g:airline_theme='onedark'
+" syntax on
+" let g:onedark_terminal_italics=1
+" colorscheme onedark
+" let g:airline_theme='onedark'
 
 "****************** airline ***************
 let g:airline_powerline_fonts = 1
 set t_Co=256
-"let g:airline_theme='gruvbox'
+" let g:airline_theme='gruvbox'
 "let g:airline_theme='solarized'
 "let g:airline_theme='seoul256'
-"let g:airline_theme='deus'
-"let g:airline_theme='darculaOriginal'
-let g:airline_theme='zenburn'
-"let g:airline_theme = 'gruvbox_material'
+" let g:airline_theme='deus'
+" let g:airline_theme='neon'
+" let g:edge_style = 'neon'
+" let g:edge_style = 'neon'
+" let g:edge_enable_italic = 1
+" let g:airline_theme='darculaOriginal'
+"let g:airline_theme='zenburn'
+""let g:airline_theme = 'gruvbox_material'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 1
 let g:airline#extensions#tabline#show_splits = 1
@@ -261,17 +290,39 @@ let g:airline#extensions#tabline#show_close_button = 0
 "colorscheme molokai
 
 "***********
-"colorscheme monokai
+" colorscheme monokai
 
+" ----- theme : palenight
+""
+" set background=dark
+" colorscheme palenight
+" let g:airline_theme = "palenight"
+
+"------- theme : tokyonight
+"
+" set termguicolors
+" let g:tokyonight_style = 'night' " available: night, storm
+" let g:tokyonight_enable_italic = 1
+" colorscheme tokyonight
+
+" ------ theme : tender
+" if (has("termguicolors"))
+"  set termguicolors
+" endif
+" syntax enable
+" colorscheme tender
+
+" ------ theme embark
+" colorscheme embark
 
 "**** theme ;one half 
-"syntax on
-"set t_Co=256
-"set cursorline
-"colorscheme onehalflight
-"let g:airline_theme='onehalfdark'
-" lightline
-" let g:lightline = { 'colorscheme': 'onehalfdark' }
+" syntax on
+" set t_Co=256
+" set cursorline
+" colorscheme onehalfdark
+" let g:airline_theme='onehalfdark'
+ " lightline
+ " let g:lightline = { 'colorscheme': 'onehalfdark' }
 
 
 
@@ -373,6 +424,10 @@ if has("autocmd")
     \| exe "normal! g'\"" | endif
 endif
 
+" persist my changes 
+set undofile 
+set undodir=~/.config/nvim/undodir
+
 "Stuff for GoLang"
 "filetype off
 "filetype plugin indent off
@@ -414,6 +469,9 @@ let g:python3_host_prog = '/Library/Developer/CommandLineTools/Library/Framework
 nnoremap dw gd[{V%::s/<C-R>///gc<left><left><left>
 nnoremap dq gD:%s/<C-R>///gc<left><left><left>
 
+"fucking pyroght
+" autocmd FileType python let b:coc_root_patterns = ['.git', '.env', 'venv', '.venv', 'setup.cfg', 'setup.py', 'pyproject.toml', 'pyrightconfig.json']
+autocmd FileType python let b:coc_root_patterns = ['main.py', 'setup.cfg', 'setup.py', 'pyproject.toml', 'pyrightconfig.json']
 
 if exists('+termguicolors')
   let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
@@ -421,6 +479,87 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
+if (has("nvim"))
+  "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
+  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
 
+"For Neovim > 0.1.5 and Vim > patch 7.4.1799 < https://github.com/vim/vim/commit/61be73bb0f965a895bfb064ea3e55476ac175162 >
+"Based on Vim patch 7.4.1770 (`guicolors` option) < https://github.com/vim/vim/commit/8a633e3427b47286869aa4b96f2bfc1fe65b25cd >
+" < https://github.com/neovim/neovim/wiki/Following-HEAD#20160511 >
+if (has("termguicolors"))
+  set termguicolors
+endif
 
+" let g:palenight_color_overrides = {
+" \    'black': { 'gui': '#00ffff', "cterm": "0", "cterm16": "2" },
+" \}
+
+let g:Lf_WindowPosition = 'popup'
+let g:Lf_PreviewInPopup = 1
+
+" " leader f
+" " don't show the help in normal mode
+" let g:Lf_HideHelp = 1
+" let g:Lf_UseCache = 0
+" let g:Lf_UseVersionControlTool = 0
+" let g:Lf_IgnoreCurrentBufferName = 1
+" " popup mode
+" let g:Lf_WindowPosition = 'popup'
+" let g:Lf_PreviewInPopup = 1
+" let g:Lf_StlSeparator = { 'left': "\ue0b0", 'right': "\ue0b2", 'font': "DejaVu Sans Mono for Powerline" }
+" let g:Lf_PreviewResult = {'Function': 0, 'BufTag': 0 }
+
+" let g:Lf_ShortcutF = "<leader>ff"
+" noremap <leader>fb :<C-U><C-R>=printf("Leaderf buffer %s", "")<CR><CR>
+" noremap <leader>fm :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
+" noremap <leader>ft :<C-U><C-R>=printf("Leaderf bufTag %s", "")<CR><CR>
+" noremap <leader>fl :<C-U><C-R>=printf("Leaderf line %s", "")<CR><CR>
+
+" noremap <C-B> :<C-U><C-R>=printf("Leaderf! rg --current-buffer -e %s ", expand("<cword>"))<CR>
+" noremap <C-F> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
+" " search visually selected text literally
+" xnoremap gf :<C-U><C-R>=printf("Leaderf! rg -F -e %s ", leaderf#Rg#visual())<CR>
+" noremap go :<C-U>Leaderf! rg --recall<CR>
+
+" " should use `Leaderf gtags --update` first
+" let g:Lf_GtagsAutoGenerate = 0
+" let g:Lf_Gtagslabel = 'native-pygments'
+" noremap <leader>fr :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
+" noremap <leader>fd :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<CR><CR>
+" noremap <leader>fo :<C-U><C-R>=printf("Leaderf! gtags --recall %s", "")<CR><CR>
+" noremap <leader>fn :<C-U><C-R>=printf("Leaderf gtags --next %s", "")<CR><CR>
+" noremap <leader>fp :<C-U><C-R>=printf("Leaderf gtags --previous %s", "")<CR><CR>
+
+"  telescope
+"
+" Find files using Telescope command-line sugar.
+" nnoremap <leader>ff <cmd>Telescope find_files<cr>
+" nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+" nnoremap <leader>fb <cmd>Telescope buffers<cr>
+" nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+" Using Lua functions
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files({layout_strategy='horizontal',layout_config={width=0.93}})<cr>
+nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep({layout_strategy='horizontal',layout_config={width=0.93}})<cr>
+nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers({layout_strategy='horizontal',layout_config={width=0.93}})<cr>
+nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags({layout_strategy='horizontal',layout_config={width=0.93}})<cr>
+
+" my customs italics xd
+hi Comment gui=italic cterm=italic
+hi String gui=italic cterm=italic
+hi Type gui=italic cterm=italic
+" hi Function gui=italic cterm=italic
+" hi Tag gui=italic cterm=italic
+hi Macro gui=italic cterm=italic
+hi Statement gui=italic cterm=italic
+hi Conditional gui=italic cterm=italic
+hi Repeat gui=italic cterm=italic
+hi Label gui=italic cterm=italic
+hi Operator gui=italic cterm=italic
+hi Keyword gui=italic cterm=italic
+hi Preproc gui=italic cterm=italic
+hi Exception gui=italic cterm=italic
+hi Delimiter gui=italic cterm=italic
+hi Special gui=italic cterm=italic
+hi pythonFunctionCall gui=italic cterm=italic guifg=wheat
 
