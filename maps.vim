@@ -60,6 +60,12 @@ nnoremap <Leader>x :!node %<cr>
 
 inoremap <C-Space> <C-l>
 
+" gitgutter 
+nmap ]h <Plug>(GitGutterNextHunk)
+nmap [h <Plug>(GitGutterPrevHunk)
+
+" nnoremap gv :only<bar>vsplit<CR>gd
+" nnoremap gh :only<bar>split<CR>gd
 
 set splitright
 function! OpenTerminal()
@@ -96,12 +102,17 @@ function! OpenTerminal()
   endif
 endfunction
 nnoremap <C-t> :call OpenTerminal()<CR>
-nmap <F8> :TagbarToggle<CR>
+" nmap <F8> :TagbarToggle<CR>
+nnoremap <leader>tb :TagbarToggle<cr>
 nmap <silent>xx :bw<cr>
 " next tab
 nmap <Tab> :bn<cr>
 "close buffer aka tab
 "nmap <Tab> :bn<cr>
+
+" java spring boot
+nnoremap <leader>jj :!mvn compile && mvn exec:java -Dexec.mainClass=com.example.demo.DemoApplication<cr>  
+
 
 " Define mappings for denite
 autocmd FileType denite call s:denite_my_settings()

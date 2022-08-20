@@ -1,0 +1,166 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/Users/hellraiser/.config/nvim/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210801.0/
+$FZF_DEFAULT_OPTS	plugin-config.vim	/^let $FZF_DEFAULT_OPTS='--layout=reverse'$/;"	v
+$NVIM_TUI_ENABLE_TRUE_COLOR	init.vim	/^  let $NVIM_TUI_ENABLE_TRUE_COLOR = 1$/;"	v
+$NVIM_TUI_ENABLE_TRUE_COLOR	init.vim	/^  let $NVIM_TUI_ENABLE_TRUE_COLOR=1$/;"	v
+0	coc-settings.json	/^      "filetypes": ["go"],$/;"	s	array:languageserver.golang.filetypes
+0	coc-settings.json	/^      "rootPatterns": ["go.mod", ".vim\/", ".git\/", ".hg\/"],$/;"	s	array:languageserver.golang.rootPatterns
+0	coc-settings.json	/^    \/* "javascript", *\/$/;"	z	array:eslint.filetypes
+0	undodir/%Users%hellraiser%moonshot%ms-integration%dev-space-old%manifest%dist%manifest.json	/^VimüUnDoÂc5e-94ba-0f3f94e561ce",\/www.go1.com\/en-au\/terms\/user-terms"	"name": {ve learning sp/;"	n
+0	undodir/%Users%hellraiser%moonshot%ms-integration2%dev-space-2%teams-app%package-lock.json	/^VimüUnDoÂÑ5»Ù[“§P/;"	z
+0	undodir/%Users%hellraiser%moonshot%ms-integration2%last-chat%teams-app%package-lock.json	/^VimüUnDoÂÑ5»Ù[“§P/;"	z
+1	coc-settings.json	/^      "rootPatterns": ["go.mod", ".vim\/", ".git\/", ".hg\/"],$/;"	s	array:languageserver.golang.rootPatterns
+1	coc-settings.json	/^    \/* "javascript", *\/$/;"	z	array:eslint.filetypes
+2	coc-settings.json	/^      "rootPatterns": ["go.mod", ".vim\/", ".git\/", ".hg\/"],$/;"	s	array:languageserver.golang.rootPatterns
+2	coc-settings.json	/^    "typescriptreact",$/;"	s	array:eslint.filetypes
+3	coc-settings.json	/^      "rootPatterns": ["go.mod", ".vim\/", ".git\/", ".hg\/"],$/;"	s	array:languageserver.golang.rootPatterns
+3	coc-settings.json	/^    "javascriptreact",$/;"	s	array:eslint.filetypes
+4	coc-settings.json	/^    "typescript.tsx"$/;"	s	array:eslint.filetypes
+<C-Space>	maps.vim	/^inoremap <C-Space> <C-l>$/;"	m
+<C-b>	init.vim	/^nmap <silent> <C-b> :NERDTreeToggle<CR>$/;"	m
+<C-e>	maps.vim	/^nnoremap <silent> <C-e> 10<C-e>$/;"	m
+<C-t>	maps.vim	/^nnoremap <C-t> :call OpenTerminal()<CR>$/;"	m
+<C-v>	init.vim	/^nmap <silent> <C-v> :Prettier<CR>$/;"	m
+<C-y>	maps.vim	/^nnoremap <silent> <C-y> 10<C-y>$/;"	m
+<CR>	maps.vim	/^  nnoremap <silent><buffer><expr> <CR>$/;"	m
+<Leader>;	maps.vim	/^nnoremap <Leader>; $a;<Esc>$/;"	m
+<Leader><	maps.vim	/^nnoremap <Leader>< 10<C-w><$/;"	m
+<Leader>>	maps.vim	/^nnoremap <Leader>> 10<C-w>>$/;"	m
+<Leader>G	maps.vim	/^nnoremap <Leader>G :G<cr>$/;"	m
+<Leader>T	maps.vim	/^nnoremap <Leader>T :TestFile<CR>$/;"	m
+<Leader>TT	maps.vim	/^nnoremap <Leader>TT :TestSuite<CR>$/;"	m
+<Leader>ag	maps.vim	/^map <Leader>ag :Ag<CR>$/;"	m
+<Leader>dia	maps.vim	/^nnoremap <Leader>dia  :<C-u>CocList diagnostics<cr>$/;"	m
+<Leader>gl	maps.vim	/^nnoremap <Leader>gl :Gpull<cr>$/;"	m
+<Leader>gp	maps.vim	/^nnoremap <Leader>gp :Gpush<cr>$/;"	m
+<Leader>h	maps.vim	/^map <Leader>h :tabprevious<cr>$/;"	m
+<Leader>l	maps.vim	/^map <Leader>l :tabnext<cr>$/;"	m
+<Leader>nt	maps.vim	/^map <Leader>nt :NERDTreeFind<CR>$/;"	m
+<Leader>ob	maps.vim	/^map <Leader>ob :Buffers<cr>$/;"	m
+<Leader>p	maps.vim	/^map <Leader>p :Files<CR>$/;"	m
+<Leader>q	maps.vim	/^nnoremap <Leader>q :q<CR>$/;"	m
+<Leader>s	maps.vim	/^nmap <Leader>s <Plug>(easymotion-s2)$/;"	m
+<Leader>t	maps.vim	/^nnoremap <Leader>t :TestNearest<CR>$/;"	m
+<Leader>w	maps.vim	/^nnoremap <Leader>w :w<CR>$/;"	m
+<Leader>x	maps.vim	/^nnoremap <Leader>x :!node %<cr>$/;"	m
+<Space>	maps.vim	/^  nnoremap <silent><buffer><expr> <Space>$/;"	m
+<Tab>	maps.vim	/^nmap <Tab> :bn<cr>$/;"	m
+<c-space>	plugin-config.vim	/^inoremap <silent><expr> <c-space> coc#refresh()$/;"	m
+<cr>	init.vim	/^xnoremap <silent> <cr> "*y:silent! let searchTerm = '\\V'.substitute(escape(@*, '\\\/'), "\\n", /;"	m
+<leader>fb	init.vim	/^nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers({layout_strategy='horizontal',/;"	m
+<leader>ff	init.vim	/^nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files({layout_strategy='horizonta/;"	m
+<leader>fg	init.vim	/^nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep({layout_strategy='horizontal/;"	m
+<leader>fh	init.vim	/^nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags({layout_strategy='horizontal/;"	m
+<leader>fl	init.vim	/^nnoremap <leader>fl :let @+=expand('% \\| pbcopy')<cr>$/;"	m
+<leader>ft	init.vim	/^nnoremap <leader>ft :let @+=expand('%:p')<cr>$/;"	m
+<leader>jj	maps.vim	/^nnoremap <leader>jj :!mvn compile && mvn exec:java -Dexec.mainClass=com.example.demo.DemoApplica/;"	m
+<leader>kp	maps.vim	/^nnoremap <leader>kp :let @*=expand("%")<CR>$/;"	m
+<leader>tb	maps.vim	/^nnoremap <leader>tb :TagbarToggle<cr>$/;"	m
+Ag	plugin-config.vim	/^command! -bang -nargs=* Ag$/;"	c
+CUSTOMOpen	init.vim	/^function! CUSTOMOpen(command_str)$/;"	f
+Files	plugin-config.vim	/^command! -bang -nargs=? -complete=dir Files$/;"	c
+FindTsServer	plugin-config.vim	/^function! FindTsServer(idx, value) $/;"	f
+FloatingFZF	plugin-config.vim	/^function! FloatingFZF()$/;"	f
+GFiles	plugin-config.vim	/^command! -bang -nargs=? -complete=dir GFiles$/;"	c
+K	maps.vim	/^nnoremap <silent> K :call CocAction('doHover')<CR>$/;"	m
+NERDTreeAutoDeleteBuffer	plugin-config.vim	/^let NERDTreeAutoDeleteBuffer=1$/;"	v
+NERDTreeDirArrows	plugin-config.vim	/^let NERDTreeDirArrows=1$/;"	v
+NERDTreeMapOpenInTab	plugin-config.vim	/^let NERDTreeMapOpenInTab='\\t'$/;"	v
+NERDTreeMinimalUI	plugin-config.vim	/^let NERDTreeMinimalUI=0$/;"	v
+NERDTreeQuitOnOpen	plugin-config.vim	/^let NERDTreeQuitOnOpen=0$/;"	v
+NERDTreeShowHidden	plugin-config.vim	/^let NERDTreeShowHidden=1$/;"	v
+NERDTreeShowLineNumbers	plugin-config.vim	/^let NERDTreeShowLineNumbers=0$/;"	v
+OpenTerminal	maps.vim	/^function! OpenTerminal()$/;"	f
+SearchPatternInFile	plugin-config.vim	/^function! SearchPatternInFile(pattern)$/;"	f
+SwitchFlowOrTsLsps	plugin-config.vim	/^function! SwitchFlowOrTsLsps(flowIndex)$/;"	f
+VimüUnDoÂmatrix	undodir/%Users%hellraiser%leetcode%spiral_matrix.py	/^VimüUnDoÂmatrix = [5Å_–/;"	v
+VimüUnDoÂtarget	undodir/%Users%hellraiser%startup%login_python_aas%backend%bsearc.py	/^VimüUnDoÂÅı,target = 45Åıtarget = 35Åı/;"	v
+[h	maps.vim	/^nmap [h <Plug>(GitGutterPrevHunk)$/;"	m
+]h	maps.vim	/^nmap ]h <Plug>(GitGutterNextHunk)$/;"	m
+bots	undodir/%Users%hellraiser%moonshot%ms-integration%dev-space-old%manifest%manifest.json	/^VimüUnDoÂ	"name": {	"bots": [/;"	a
+coc.preferences.formatOnType	coc-settings.json	/^  "coc.preferences.formatOnType": true,$/;"	b
+command	coc-settings.json	/^      "command": "gopls",$/;"	s	object:languageserver.golang
+d	maps.vim	/^  nnoremap <silent><buffer><expr> d$/;"	m
+diagnostic.errorSign	coc-settings.json	/^  "diagnostic.errorSign": "ÓÇ∞",$/;"	s
+diagnostic.floatConfig	coc-settings.json	/^  "diagnostic.floatConfig" : {$/;"	o
+diagnostic.infoSign	coc-settings.json	/^  "diagnostic.infoSign": "?",$/;"	s
+diagnostic.warningSign	coc-settings.json	/^  "diagnostic.warningSign": "ÓÇ∞",$/;"	s
+dq	init.vim	/^nnoremap dq gD:%s\/<C-R>\/\/\/gc<left><left><left>$/;"	m
+dw	init.vim	/^nnoremap dw gd[{V%::s\/<C-R>\/\/\/gc<left><left><left>$/;"	m
+eslint.autoFixOnSave	coc-settings.json	/^  "eslint.autoFixOnSave": true,$/;"	b
+eslint.filetypes	coc-settings.json	/^  "eslint.filetypes": [$/;"	a
+filetype	init.vim	/^augroup filetype javascript syntax=javascript$/;"	a
+filetypes	coc-settings.json	/^      "filetypes": ["go"],$/;"	a	object:languageserver.golang
+g:Lf_PreviewInPopup	init.vim	/^let g:Lf_PreviewInPopup = 1$/;"	v
+g:Lf_WindowPosition	init.vim	/^let g:Lf_WindowPosition = 'popup'$/;"	v
+g:NERDAltDelims_java	init.vim	/^let g:NERDAltDelims_java = 1$/;"	v
+g:NERDCommentEmptyLines	init.vim	/^let g:NERDCommentEmptyLines = 1$/;"	v
+g:NERDCompactSexyComs	init.vim	/^let g:NERDCompactSexyComs = 1$/;"	v
+g:NERDCreateDefaultMappings	init.vim	/^let g:NERDCreateDefaultMappings = 1$/;"	v
+g:NERDCustomDelimiters	init.vim	/^let g:NERDCustomDelimiters = { 'c': { 'left': '\/**','right': '*\/' } }$/;"	v
+g:NERDDefaultAlign	init.vim	/^let g:NERDDefaultAlign = 'left'$/;"	v
+g:NERDSpaceDelims	init.vim	/^let g:NERDSpaceDelims = 1$/;"	v
+g:NERDToggleCheckAllLines	init.vim	/^let g:NERDToggleCheckAllLines = 1$/;"	v
+g:NERDTreeWinSize	plugin-config.vim	/^let g:NERDTreeWinSize=33$/;"	v
+g:NERDTrimTrailingWhitespace	init.vim	/^let g:NERDTrimTrailingWhitespace = 1$/;"	v
+g:UltiSnipsExpandTrigger	plugin-config.vim	/^let g:UltiSnipsExpandTrigger="<tab>"$/;"	v
+g:UltiSnipsJumpBackwardTrigger	plugin-config.vim	/^let g:UltiSnipsJumpBackwardTrigger="<S-tab>"$/;"	v
+g:UltiSnipsJumpForwardTrigger	plugin-config.vim	/^let g:UltiSnipsJumpForwardTrigger="<tab>"$/;"	v
+g:UltiSnipsSnippetDirectories	plugin-config.vim	/^let g:UltiSnipsSnippetDirectories=[$HOME.'\/config\/.vim\/UltiSnips']$/;"	v
+g:closetag_filenames	plugin-config.vim	/^let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'$/;"	v
+g:ctrlp_user_command	init.vim	/^  let g:ctrlp_user_command = 'rg %s --files --hidden --color=never --glob ""'$/;"	v
+g:deoplete#enable_at_startup	plugin-config.vim	/^let g:deoplete#enable_at_startup = 1$/;"	v
+g:fzf_layout	plugin-config.vim	/^let g:fzf_layout = { 'window': 'call FloatingFZF()' }$/;"	v
+g:go_def_mode	init.vim	/^let g:go_def_mode='gopls'$/;"	v
+g:go_info_mode	init.vim	/^let g:go_info_mode='gopls'$/;"	v
+g:javascript_plugin_flow	plugin-config.vim	/^let g:javascript_plugin_flow = 1$/;"	v
+g:lightline	plugin-config.vim	/^let g:lightline = {$/;"	v
+g:neosnippet#enable_completed_snippet	plugin-config.vim	/^let g:neosnippet#enable_completed_snippet = 1$/;"	v
+g:nerdtree_sync_cursorline	init.vim	/^let g:nerdtree_sync_cursorline = 1$/;"	v
+g:python3_host_prog	init.vim	/^let g:python3_host_prog = '\/Library\/Developer\/CommandLineTools\/Library\/Frameworks\/Python3./;"	v
+g:python_highlight_all	init.vim	/^let g:python_highlight_all = 1$/;"	v
+g:tagbar_type_typescript	init.vim	/^let g:tagbar_type_typescript = {$/;"	v
+g:tagbar_type_typescriptreact	init.vim	/^let g:tagbar_type_typescriptreact = {$/;"	v
+g:vim_jsx_pretty_colorful_config	init.vim	/^let g:vim_jsx_pretty_colorful_config = 1 " default 0$/;"	v
+g:vscode_disable_nvimtree_bg	init.vim	/^let g:vscode_disable_nvimtree_bg = v:true$/;"	v
+g:vscode_italic_comment	init.vim	/^let g:vscode_italic_comment = 1$/;"	v
+g:vscode_transparency	init.vim	/^let g:vscode_transparency = 1$/;"	v
+g:yats_host_keyword	init.vim	/^let g:yats_host_keyword = 1$/;"	v
+g:zenburn_disable_Label_underline	init.vim	/^let g:zenburn_disable_Label_underline = 1$/;"	v
+gd	maps.vim	/^nmap <silent> gd <Plug>(coc-definition)$/;"	m
+gd	plugin-config.vim	/^nmap <silent> gd <Plug>(coc-definition)$/;"	m
+gi	maps.vim	/^nmap <silent> gi <Plug>(coc-implementation)$/;"	m
+gi	plugin-config.vim	/^nmap <silent> gi <Plug>(coc-implementation)$/;"	m
+golang	coc-settings.json	/^    "golang": {$/;"	o	object:languageserver
+gr	maps.vim	/^nmap <silent> gr <Plug>(coc-references)$/;"	m
+gr	plugin-config.vim	/^nmap <silent> gr <Plug>(coc-references)$/;"	m
+gy	maps.vim	/^nmap <silent> gy <Plug>(coc-type-definition)$/;"	m
+gy	plugin-config.vim	/^nmap <silent> gy <Plug>(coc-type-definition)$/;"	m
+i	maps.vim	/^  nnoremap <silent><buffer><expr> i$/;"	m
+initializationOptions	coc-settings.json	/^      "initializationOptions": {$/;"	o	object:languageserver.golang
+languageserver	coc-settings.json	/^  "languageserver": {$/;"	o
+mapleader	maps.vim	/^let mapleader=","$/;"	v
+omnisharp.debug.server	coc-settings.json	/^    "omnisharp.debug.server": true,$/;"	b
+omnisharp.trace.server	coc-settings.json	/^    "omnisharp.trace.server": "information",$/;"	s
+p	maps.vim	/^  nnoremap <silent><buffer><expr> p$/;"	m
+python.pythonPath	coc-settings.json	/^  "python.pythonPath": "python",$/;"	s
+q	maps.vim	/^  nnoremap <silent><buffer><expr> q$/;"	m
+rootPatterns	coc-settings.json	/^      "rootPatterns": ["go.mod", ".vim\/", ".git\/", ".hg\/"],$/;"	a	object:languageserver.golang
+s:denite_my_settings	maps.vim	/^function! s:denite_my_settings() abort$/;"	f
+s:denite_options	plugin-config.vim	/^let s:denite_options = {'default' : {$/;"	v
+s:profile	plugin-config.vim	/^function! s:profile(opts) abort$/;"	f
+shadow	coc-settings.json	/^    "shadow": true,$/;"	b	object:diagnostic.floatConfig
+title	coc-settings.json	/^    "title" : "coc-floating"$/;"	s	object:diagnostic.floatConfig
+tsserver.formatOnType	coc-settings.json	/^  "tsserver.formatOnType": true,$/;"	b
+usePlaceholders	coc-settings.json	/^        "usePlaceholders": true$/;"	b	object:languageserver.golang.initializationOptions
+xd	undodir/%Users%hellraiser%moonshot%ms-integration%dev-space-old%edubot%src%utils%base.loggers.ts	/^VimüUnDoÂ	    levels5ÅıﬁÛ¸  winston.format.timestamp({ format: 'YY-MM-DD HH:mm:ss' }),Ùö/;"	c
+xx	maps.vim	/^nmap <silent>xx :bw<cr>$/;"	m

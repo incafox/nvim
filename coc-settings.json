@@ -1,4 +1,9 @@
 {
+  "diagnostic.floatConfig" : {
+   // "border": true,
+    "shadow": true,
+    "title" : "coc-floating"
+  },
   //*"coc.preferences.formatOnSaveFiletypes": [
   //  "css",
   //  "markdown",
@@ -32,17 +37,20 @@
     "javascriptreact",
     "typescript.tsx"
   ],
-  "eslint.options": {
-    "env": {
-      "browser": true,
-      "node": true
-    },
-    "rules": {
-       "quotes": [1, "single", { "avoidEscape": true }]
-    }
-  },
-  "diagnostic.errorSign": "|>",
-  "diagnostic.warningSign": "w",
+  //"eslint.options": {
+  //  "env": {
+  //  "browser": true,
+  //    "node": true
+  //  },
+  //  "rules": {
+  //     "quotes": [1, "single", { "avoidEscape": true }]
+  //  }
+  //},
+
+  //"java.home": "/Library/Java/JavaVirtualMachines/openjdk.jdk",
+
+  "diagnostic.errorSign": "",
+  "diagnostic.warningSign": "",
   "diagnostic.infoSign": "?",
   "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": true,
@@ -50,6 +58,9 @@
   /* "diagnostic.warningSign": "•", */
   /* "diagnostic.infoSign": "•", */
 
+  "omnisharp.version": "v1.37.3",
+    "omnisharp.trace.server": "information",
+    "omnisharp.debug.server": true,
   "languageserver": {
     "golang": {
       "command": "gopls",
