@@ -15,9 +15,6 @@ $NVIM_TUI_ENABLE_TRUE_COLOR	init.vim	/^  let $NVIM_TUI_ENABLE_TRUE_COLOR=1$/;"	v
 0	coc-settings.json	/^      "filetypes": ["go"],$/;"	s	array:languageserver.golang.filetypes
 0	coc-settings.json	/^      "rootPatterns": ["go.mod", ".vim\/", ".git\/", ".hg\/"],$/;"	s	array:languageserver.golang.rootPatterns
 0	coc-settings.json	/^    \/* "javascript", *\/$/;"	z	array:eslint.filetypes
-0	undodir/%Users%hellraiser%moonshot%ms-integration%dev-space-old%manifest%dist%manifest.json	/^VimüUnDoÂc5e-94ba-0f3f94e561ce",\/www.go1.com\/en-au\/terms\/user-terms"	"name": {ve learning sp/;"	n
-0	undodir/%Users%hellraiser%moonshot%ms-integration2%dev-space-2%teams-app%package-lock.json	/^VimüUnDoÂÑ5»Ù[“§P/;"	z
-0	undodir/%Users%hellraiser%moonshot%ms-integration2%last-chat%teams-app%package-lock.json	/^VimüUnDoÂÑ5»Ù[“§P/;"	z
 1	coc-settings.json	/^      "rootPatterns": ["go.mod", ".vim\/", ".git\/", ".hg\/"],$/;"	s	array:languageserver.golang.rootPatterns
 1	coc-settings.json	/^    \/* "javascript", *\/$/;"	z	array:eslint.filetypes
 2	coc-settings.json	/^      "rootPatterns": ["go.mod", ".vim\/", ".git\/", ".hg\/"],$/;"	s	array:languageserver.golang.rootPatterns
@@ -82,11 +79,8 @@ NERDTreeShowLineNumbers	plugin-config.vim	/^let NERDTreeShowLineNumbers=0$/;"	v
 OpenTerminal	maps.vim	/^function! OpenTerminal()$/;"	f
 SearchPatternInFile	plugin-config.vim	/^function! SearchPatternInFile(pattern)$/;"	f
 SwitchFlowOrTsLsps	plugin-config.vim	/^function! SwitchFlowOrTsLsps(flowIndex)$/;"	f
-VimüUnDoÂmatrix	undodir/%Users%hellraiser%leetcode%spiral_matrix.py	/^VimüUnDoÂmatrix = [5Å_–/;"	v
-VimüUnDoÂtarget	undodir/%Users%hellraiser%startup%login_python_aas%backend%bsearc.py	/^VimüUnDoÂÅı,target = 45Åıtarget = 35Åı/;"	v
 [h	maps.vim	/^nmap [h <Plug>(GitGutterPrevHunk)$/;"	m
 ]h	maps.vim	/^nmap ]h <Plug>(GitGutterNextHunk)$/;"	m
-bots	undodir/%Users%hellraiser%moonshot%ms-integration%dev-space-old%manifest%manifest.json	/^VimüUnDoÂ	"name": {	"bots": [/;"	a
 coc.preferences.formatOnType	coc-settings.json	/^  "coc.preferences.formatOnType": true,$/;"	b
 command	coc-settings.json	/^      "command": "gopls",$/;"	s	object:languageserver.golang
 d	maps.vim	/^  nnoremap <silent><buffer><expr> d$/;"	m
@@ -162,5 +156,4 @@ shadow	coc-settings.json	/^    "shadow": true,$/;"	b	object:diagnostic.floatConf
 title	coc-settings.json	/^    "title" : "coc-floating"$/;"	s	object:diagnostic.floatConfig
 tsserver.formatOnType	coc-settings.json	/^  "tsserver.formatOnType": true,$/;"	b
 usePlaceholders	coc-settings.json	/^        "usePlaceholders": true$/;"	b	object:languageserver.golang.initializationOptions
-xd	undodir/%Users%hellraiser%moonshot%ms-integration%dev-space-old%edubot%src%utils%base.loggers.ts	/^VimüUnDoÂ	    levels5ÅıﬁÛ¸  winston.format.timestamp({ format: 'YY-MM-DD HH:mm:ss' }),Ùö/;"	c
 xx	maps.vim	/^nmap <silent>xx :bw<cr>$/;"	m
