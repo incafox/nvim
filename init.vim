@@ -195,15 +195,6 @@ endif
 " colorscheme everforest
 " highlight! link SignColumn LineNr
 
-" let g:javascript_plugin_jsdoc = 1
-" let g:typescript_conceal_function             = "ƒ"
-" let g:typescript_conceal_null                 = "ø"
-" let g:typescript_conceal_undefined            = "¿"
-" let g:typescript_conceal_this                 = "@"
-" let g:typescript_conceal_return               = "⇚"
-" let g:typescript_conceal_prototype            = "¶"
-" let g:typescript_conceal_super                = "Ω"
-
 "****** github theme ****
 "" use a slightly darker background, like GitHub inline code blocks
 " let g:github_colors_soft = 1
@@ -241,36 +232,6 @@ endif
 " let g:NERDTreeHighlightCursorline = 1
 let g:nerdtree_sync_cursorline = 1
 
-"***** gruvbox material *******
-" Important!!
-"if has('termguicolors')
-"  set termguicolors
-"endif
-" For dark version.
-"set background=dark
-" For light version.
-"set background=light
-" Set contrast.
-" This configuration option should be placed before `colorscheme gruvbox-material`.
-" Available values: 'hard', 'medium'(default), 'soft'
-"let g:gruvbox_material_background = 'soft'
-"let g:gruvbox_material_enable_italic = 1
-"let g:gruvbox_material_disable_italic_comment = 1
-"let g:gruvbox_material_palette = 'material'
-"colorscheme gruvbox-material
-"augroup GruvboxMaterialCustom
-"  autocmd!
-"  autocmd ColorScheme gruvbox-material call SetColorOptions()
-"  function SetColorOptions()
-"    highlight Normal guibg=#4f4a4a ctermbg=233
-"    highlight EndOfBuffer guibg=#4f4a4a ctermbg=233
-"    highlight Visual term=reverse cterm=reverse guibg=Grey
-"  endfunction
-"augroup END
-"syntax on
-"highlight Visual term=reverse cterm=reverse guibg=Grey
-"set background=light
-"************************
 "********* VIM ONE mala syntaxis **********
 " colorscheme one
 "set background=dark " for the dark version
@@ -337,7 +298,6 @@ let g:nerdtree_sync_cursorline = 1
 " set t_Co=256
 " set t_ut=
 " colorscheme codedark
-
 
 " ----------------
 "
@@ -408,8 +368,6 @@ set smartcase                   " ... unless they contain at least one capital l
 nmap <silent> <C-b> :NERDTreeToggle<CR>
 "command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 "command! -nargs=0 Prettier :CocCommand prettier.formatFile
-"vmap <leader>f  <Plug>(coc-format-selected)
-"nmap <silent><C-v>(coc-format-selected)
 
 nmap <silent> <C-v> :Prettier<CR>
 nmap <silent> <C-v> :Prettier<CR>
@@ -420,7 +378,6 @@ endif
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
 
-
 " Some Linux distributions set filetype in /etc/vimrc.
 " Clear filetype flags before changing runtimepath to force Vim to reload them.
 "filetype off
@@ -428,8 +385,6 @@ let g:go_info_mode='gopls'
 "set runtimepath+=$GOROOT/misc/vim
 "filetype plugin indent on
 "syntax on
-"
-"
 "
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
@@ -442,7 +397,6 @@ endif
 set undofile 
 set undodir=~/.config/nvim/undodir
 
-
 " delete vertical lines
 " set fillchars+=vert:\ 
 
@@ -452,18 +406,6 @@ set undodir=~/.config/nvim/undodir
 "set runtimepath+=$GOROOT/misc/vim
 filetype plugin indent on
 syntax on
-"autocmd FileType go autocmd BufWritePre <buffer> Fmt 
-" let g:go_highlight_build_constraints = 1
-" let g:go_highlight_extra_types = 1
-" let g:go_highlight_fields = 1
-" let g:go_highlight_functions = 1
-" let g:go_highlight_methods = 1
-" let g:go_highlight_operators = 1
-" let g:go_highlight_structs = 1
-" let g:go_highlight_types = 1
-" let g:go_auto_type_info = 1
-" let g:go_highlight_generate_tags = 1
-" let g:go_highlight_function_calls = 1
 
 "typescritp
 let g:yats_host_keyword = 1
@@ -475,14 +417,7 @@ let g:python_highlight_all = 1
 " hi Search ctermfg=Yellow ctermbg=NONE cterm=bold
 hi Search guibg=peru guifg=wheat
 
-"python
-"if has('python3')
-"endif
-"let g:python3_host_prog = expand('/usr/bin/python3.7')
 let g:python3_host_prog = '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8'
-"react
-
-"g:jsx_ext_required = 1
 
 "shortcut dw for local rename of all vars
 nnoremap dw gd[{V%::s/<C-R>///gc<left><left><left>
@@ -510,30 +445,14 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-" let g:palenight_color_overrides = {
-" \    'black': { 'gui': '#00ffff', "cterm": "0", "cterm16": "2" },
-" \}
-
 let g:Lf_WindowPosition = 'popup'
 let g:Lf_PreviewInPopup = 1
 
-" " leader f
-" " don't show the help in normal mode
-" let g:Lf_HideHelp = 1
-" let g:Lf_UseCache = 0
-" let g:Lf_UseVersionControlTool = 0
-" let g:Lf_IgnoreCurrentBufferName = 1
-" " popup mode
+ " popup mode
 " let g:Lf_WindowPosition = 'popup'
 " let g:Lf_PreviewInPopup = 1
 " let g:Lf_StlSeparator = { 'left': "\ue0b0", 'right': "\ue0b2", 'font': "DejaVu Sans Mono for Powerline" }
 " let g:Lf_PreviewResult = {'Function': 0, 'BufTag': 0 }
-
-" let g:Lf_ShortcutF = "<leader>ff"
-" noremap <leader>fb :<C-U><C-R>=printf("Leaderf buffer %s", "")<CR><CR>
-" noremap <leader>fm :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
-" noremap <leader>ft :<C-U><C-R>=printf("Leaderf bufTag %s", "")<CR><CR>
-" noremap <leader>fl :<C-U><C-R>=printf("Leaderf line %s", "")<CR><CR>
 
 " noremap <C-B> :<C-U><C-R>=printf("Leaderf! rg --current-buffer -e %s ", expand("<cword>"))<CR>
 " noremap <C-F> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
@@ -579,67 +498,11 @@ nnoremap <leader>fl :let @+=expand('% \| pbcopy')<cr>
 "copy the full path of the file
 nnoremap <leader>ft :let @+=expand('%:p')<cr>
 
-"
-" " my customs italics xd
+"my customs italics xd
 hi Comment gui=italic cterm=italic
 hi String gui=italic cterm=italic
-" hi Type gui=italic cterm=italic
-" hi Function gui=italic cterm=italic
-" hi Tag gui=italic cterm=italic
-" hi Macro gui=italic cterm=italic
-" hi Statement gui=italic cterm=italic
-" hi Conditional gui=italic cterm=italic
-" hi Repeat gui=italic cterm=italic
-" hi Label gui=italic cterm=italic
-" hi Operator gui=italic cterm=italic
-" hi Keyword gui=italic cterm=italic
 hi Preproc gui=italic cterm=italic
-" hi Exception gui=italic cterm=italic
-" hi Delimiter gui=italic cterm=italic
-" hi Special gui=italic cterm=italic
-" hi pythonFunctionCall gui=italic cterm=italic guifg=wheat
 
-" typescript
-" hi typescriptAssign guifg=wheat
-" hi typescriptParens guifg=LightRed
-" hi typescriptFuncCallArg guifg=orange
-" hi typescriptBraces guifg=LightRed
-" hi typescriptObjectLabel gui=italic cterm=italic guifg=wheat
-
-" let g:tagbar_type_typescript = {                                                  
-"   \ 'ctagsbin' : 'tstags.js', 
-"   \ 'ctagsargs' : '-f-',                                                           
-"   \ 'kinds': [                                                                     
-"     \ 'e:enums:0:1',                                                               
-"     \ 'f:function:0:1',                                                            
-"     \ 't:typealias:0:1',                                                           
-"     \ 'M:Module:0:1',                                                              
-"     \ 'I:import:0:1',                                                              
-"     \ 'i:interface:0:1',                                                           
-"     \ 'C:class:0:1',                                                               
-"     \ 'm:method:0:1',                                                              
-"     \ 'p:property:0:1',                                                            
-"     \ 'v:variable:0:1',                                                            
-"     \ 'c:const:0:1',                                                              
-"   \ ],                                                                            
-"   \ 'sort' : 0                                                                    
-" \ }  
-"
-" let g:tagbar_type_typescript = {
-"   \ 'ctagstype': 'typescript',
-"   \ 'kinds': [
-"     \ 'c:classes',
-"     \ 'n:modules',
-"     \ 'f:functions',
-"     \ 'v:variables',
-"     \ 'v:varlambdas',
-"     \ 'm:members',
-"     \ 'i:interfaces',
-"     \ 'e:enums',
-"   \ ]
-" \ }
-"
-"
 let g:tagbar_type_typescript = {
   \ 'ctagstype': 'typescript',
   \ 'kinds': [
@@ -726,8 +589,6 @@ hi clear SignColumn
 """"""" lisht themes """""""
 highlight IndentBlanklineChar guifg=#f1c1c3 gui=nocombine
 
-
-
 " highlight IndentBlanklineIndent1 guifg=#E06C75 gui=nocombine
 " highlight IndentBlanklineIndent2 guifg=#E5C07B gui=nocombine
 " highlight IndentBlanklineIndent3 guifg=#98C379 gui=nocombine
@@ -737,7 +598,6 @@ highlight IndentBlanklineChar guifg=#f1c1c3 gui=nocombine
 
 " tagbar
 " let type_ts.ctagsbin = tstags
-
 
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
@@ -882,8 +742,6 @@ set tags=./tags;,./gems.tags;
 
 """"""" line for light themes """""""
 " hi CursorLine  ctermbg=green  guibg=#d9d9d9 
-
-
 
 " hi CocFloating ctermbg=red ctermfg=black guibg=black  
 " hi CocErrorFloat ctermfg=red ctermfg=black
