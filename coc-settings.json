@@ -1,9 +1,9 @@
 {
-  "diagnostic.floatConfig" : {
+  //"diagnostic.floatConfig" : {
    // "border": true,
-    "shadow": true,
-    "title" : "coc-floating"
-  },
+    //shadow": true,
+    //"title" : "coc-floating"
+  //},
   //*"coc.preferences.formatOnSaveFiletypes": [
   //  "css",
   //  "markdown",
@@ -14,8 +14,6 @@
   // "json",
   //  "python"
   //],
-  //slint de mierda
-  //"eslint.options": {},
   /* "coc.preferences.formatOnSaveFiletypes": ["javascript", "javascriptreact","python","typescriptreact","typescript" ,"css", "go"], */
   /* "coc.preferences.formatOnSaveFiletypes": [ "javascriptreact","python","typescriptreact","typescript" ,"css", "go"], */
   // python config
@@ -25,9 +23,6 @@
   /* "python.linting.pylintEnabled":true, */
   //"snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"],
   "python.pythonPath": "python",
-  //"snippets.ultisnips.pythonVersion": 3,
-  //CocCommand python.setInterpreter
-  //golang
   "eslint.enable": true,
   "eslint.autoFixOnSave": true,
   "eslint.filetypes": [
@@ -46,21 +41,11 @@
   //     "quotes": [1, "single", { "avoidEscape": true }]
   //  }
   //},
-
-  //"java.home": "/Library/Java/JavaVirtualMachines/openjdk.jdk",
-
   "diagnostic.errorSign": "",
   "diagnostic.warningSign": "",
   "diagnostic.infoSign": "?",
   "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": true,
-  /* "diagnostic.errorSign": "•", */
-  /* "diagnostic.warningSign": "•", */
-  /* "diagnostic.infoSign": "•", */
-
-  "omnisharp.version": "v1.37.3",
-    "omnisharp.trace.server": "information",
-    "omnisharp.debug.server": true,
   "languageserver": {
     "golang": {
       "command": "gopls",

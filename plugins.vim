@@ -7,40 +7,27 @@ Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
 " Plug 'flowtype/vim-flow'
 
-" status bar
-"Plug 'maximbaz/lightline-ale'
-"Plug 'itchyny/lightline.vim'
-"lubeck
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
-Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'kkharji/sqlite.lua'
 
 "telescope
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
-"snap finder 
-" Plug 'camspiers/snap'
-
 "fzf
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Plug 'dyng/ctrlsf.vim'
-"csharp
-Plug 'OmniSharp/omnisharp-vim'
 
 " easy lsp
 Plug 'neovim/nvim-lspconfig'
-Plug 'jose-elias-alvarez/null-ls.nvim'
-Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
+" Plug 'jose-elias-alvarez/null-ls.nvim'
+" Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
 
 "lsp ts
 Plug 'albingroen/nvim-lsp-typescript-config'
 
-
-
 " ctags xd ts 
-Plug 'ludovicchabant/vim-gutentags'
+" Plug 'ludovicchabant/vim-gutentags'
 
 " GD with new tab (ctrl + ])
 " Plug 'ipod825/vim-tabdrop'
@@ -58,7 +45,7 @@ else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
-Plug 'ctrlpvim/ctrlp.vim'
+" Plug 'ctrlpvim/ctrlp.vim'
 " Themes
 Plug 'morhetz/gruvbox'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
@@ -102,25 +89,15 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'Mofiqul/vscode.nvim'
 
 Plug 'nvim-lualine/lualine.nvim'
-" If you want to have icons in your statusline choose one of these
 Plug 'kyazdani42/nvim-web-devicons'
 
-"Plug 'itchyny/lightline.vim'
 " vim keyword
-Plug 'pangloss/vim-javascript'
-Plug 'HerringtonDarkholme/yats.vim'
-
-" search words
-" Plug 'dyng/ctrlsf.vim'
+" Plug 'pangloss/vim-javascript'
+" Plug 'HerringtonDarkholme/yats.vim'
 
 "icons
 Plug 'ryanoasis/vim-devicons'
 
-" emberjs
-" Plug 'andrewradev/ember_tools.vim'
-" ruby on rails
-" Plug 'tpope/vim-rails'
-" Plug 'vim-ruby/vim-ruby'
 " nerd commetns
 Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-commentary'
@@ -134,17 +111,18 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Tree
 Plug 'scrooloose/nerdtree'
 Plug 'unkiwii/vim-nerdtree-sync'
+
 " typing
-Plug 'alvan/vim-closetag'
-Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-surround'
+" Plug 'alvan/vim-closetag'
+" Plug 'jiangmiao/auto-pairs'
+" Plug 'tpope/vim-surround'
 
 " polyglot
 Plug 'herringtondarkholme/yats.vim'
 
 " tmux
-Plug 'benmills/vimux'
-Plug 'christoomey/vim-tmux-navigator'
+" Plug 'benmills/vimux'
+" Plug 'christoomey/vim-tmux-navigator'
 
 " autocomplete
 " Plug 'sirver/ultisnips'
@@ -152,47 +130,37 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
-" test
-" Plug 'tyewang/vimux-jest-test'
-" Plug 'janko-m/vim-test'
-
 " IDE
-Plug 'editorconfig/editorconfig-vim'
+" Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
-Plug 'terryma/vim-multiple-cursors'
+" Plug 'terryma/vim-multiple-cursors'
 Plug 'easymotion/vim-easymotion'
 
 " Git diffs 
 " Plug 'mhinz/vim-signify'
 Plug 'airblade/vim-gitgutter'
 
-
-
 " Plug 'yggdroot/indentline'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'scrooloose/nerdcommenter'
-"
+
 " git
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 
 " golang
 Plug 'fatih/vim-go'
-"Plug 'vim-jp/vim-go-extra'
+" Plug 'vim-jp/vim-go-extra'
 " Plug 'xolox/vim-easytags'  
-Plug 'xolox/vim-misc'
+" Plug 'xolox/vim-misc'
 "
-"react
-Plug 'yuezk/vim-js'
-Plug 'maxmellon/vim-jsx-pretty'
+" react
+" Plug 'yuezk/vim-js'
+" Plug 'maxmellon/vim-jsx-pretty'
 "
 "ts 
 Plug 'leafgarland/typescript-vim' " TypeScript syntax
-
-"" python
-" Plugin 'vim-scripts/indentpython.vim'bbbbbb
-Plug 'nvie/vim-flake8'
 
 "prettier
 " post install (yarn install | npm install) then load plugin only for editing supported files
