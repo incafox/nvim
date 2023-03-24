@@ -1,7 +1,6 @@
 "set runtimepath^=~/.vim runtimepath+=~/.vim/after
 "let &packpath = &runtimepath
 "source ~/.vimrc
-
 set number
 " set nonumber
 set mouse=a
@@ -21,9 +20,6 @@ set tabstop=2 shiftwidth=2
 filetype plugin indent on
 "filetype plugin indent off
 
-"set list
-"set listchars=·,tab:▸\ ,trail:▫,extends:>,precedes:<,nbsp:+,eol:¬
-
 " set relativenumber
 " set nornu
 so ~/.config/nvim/plugins.vim
@@ -32,7 +28,7 @@ so ~/.config/nvim/maps.vim
 
 "********* GRUBVOX THEME************
 " colorscheme gruvbox
-" let g:gruvbox_contrast_dark = 'medium'
+" " let g:gruvbox_contrast_dark = 'medium'
 " let g:gruvbox_contrast_dark = 'soft'
 " highlight Normal ctermbg=NONE
 " set background=light
@@ -47,13 +43,6 @@ set t_ZR=^[[23m
 if (has('nvim'))
   let $NVIM_TUI_ENABLE_TRUE_COLOR = 1
 endif
-
-" For Neovim > 0.1.5 and Vim > patch 7.4.1799 - https://github.com/vim/vim/commit/61be73bb0f965a895bfb064ea3e55476ac175162
-" Based on Vim patch 7.4.1770 (`guicolors` option) - https://github.com/vim/vim/commit/8a633e3427b47286869aa4b96f2bfc1fe65b25cd
-" https://github.com/neovim/neovim/wiki/Following-HEAD#20160511
-"if (has('termguicolors'))
-"  set termguicolors
-"endif
 
 " let g:material_terminal_italics = 1
 "let g:material_theme_style = 'default' | 'palenight' | 'ocean' | 'lighter' | 'darker' | 'default-community' | 'palenight-community' | 'ocean-community' | 'lighter-community' | 'darker-community'
@@ -218,24 +207,6 @@ endif
 "let g:lightline = { 'colorscheme': 'github' }
 
 
-"indent plugin
-"
-" let g:indentLine_color_term = 140 "139
-" let g:indentLine_setColors = 0
-" let g:indentLine_char_list = ['|', '¦', '┆', '┊','⎸']
-" let g:indentLine_char_list = ['┆', '┊','⎸']
-" let g:indentLine_char_list = ['⎸']
-" let g:indentLine_char_list = ['⎸']
-" let g:indentLine_char = '⎸'
-" let g:indentLine_char = '⎸'
-
-" let g:NERDTreeHighlightCursorline = 1
-let g:nerdtree_sync_cursorline = 1
-
-"********* VIM ONE mala syntaxis **********
-" colorscheme one
-"set background=dark " for the dark version
-" set background=light " for the light version
 "************ONE DARK*********
 " syntax on
 " let g:onedark_terminal_italics=1
@@ -257,11 +228,15 @@ let g:nerdtree_sync_cursorline = 1
 " let g:airline_theme = "palenight"
 
 "------- theme : tokyonight
-" set termguicolors
+set termguicolors
 " let g:tokyonight_style = 'night' " available: night, storm
-" let g:tokyonight_enable_italic = 1
-" colorscheme tokyonight
+let g:tokyonight_enable_italic = 1
+colorscheme tokyonight
+" colorscheme tokyonight-storm
 
+
+"----- monokai pro----
+" colorscheme monokai-pro
 " ------ theme : tender
 " if (has("termguicolors"))
 "  set termguicolors
@@ -300,21 +275,18 @@ let g:nerdtree_sync_cursorline = 1
 " colorscheme codedark
 
 " ----------------
-"
-
 " Vim-Script:
 " For dark theme (neovim's default)
-set background=dark
+" set background=dark
 " For light theme
 " set background=light
 " Enable transparent background
-let g:vscode_transparency = 1
+" let g:vscode_transparency = 1
 " Enable italic comment
-let g:vscode_italic_comment = 1
+" let g:vscode_italic_comment = 1
 " Disable nvim-tree background color
-let g:vscode_disable_nvimtree_bg = v:true
-colorscheme vscode
-
+" let g:vscode_disable_nvimtree_bg = v:true
+" colorscheme vscode
 
 " Create default mappings
 let g:NERDCreateDefaultMappings = 1
@@ -345,7 +317,6 @@ let g:NERDToggleCheckAllLines = 1
 
 "********************************************
 "hi Normal guibg=NONE ctermbg=NONE
-
 " Javascript
 autocmd BufRead *.js set filetype=javascript.jsx
 autocmd BufRead *.jsx set filetype=javascript.jsx
@@ -361,10 +332,7 @@ set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
 " open nerdtree on startup and go to main window
-"autocmd VimEnter * NERDTree
-"autocmd VimEnter * wincmd p
-"autocmd BufEnter * NERDTreeMirror
-nmap <silent> <C-b> :NERDTreeToggle<CR>
+nmap <silent> <C-b> :NvimTreeToggle<CR>
 "command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 "command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
@@ -377,14 +345,6 @@ endif
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
 
-" Some Linux distributions set filetype in /etc/vimrc.
-" Clear filetype flags before changing runtimepath to force Vim to reload them.
-"filetype off
-"filetype plugin indent off
-"set runtimepath+=$GOROOT/misc/vim
-"filetype plugin indent on
-"syntax on
-"
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
 if has("autocmd")
@@ -399,10 +359,6 @@ set undodir=~/.config/nvim/undodir
 " delete vertical lines
 " set fillchars+=vert:\ 
 
-"Stuff for GoLang"
-"filetype off
-"filetype plugin indent off
-"set runtimepath+=$GOROOT/misc/vim
 filetype plugin indent on
 syntax on
 
@@ -447,27 +403,11 @@ endif
 let g:Lf_WindowPosition = 'popup'
 let g:Lf_PreviewInPopup = 1
 
- " popup mode
-" let g:Lf_WindowPosition = 'popup'
-" let g:Lf_PreviewInPopup = 1
-" let g:Lf_StlSeparator = { 'left': "\ue0b0", 'right': "\ue0b2", 'font': "DejaVu Sans Mono for Powerline" }
-" let g:Lf_PreviewResult = {'Function': 0, 'BufTag': 0 }
-
 " noremap <C-B> :<C-U><C-R>=printf("Leaderf! rg --current-buffer -e %s ", expand("<cword>"))<CR>
 " noremap <C-F> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
 " " search visually selected text literally
 " xnoremap gf :<C-U><C-R>=printf("Leaderf! rg -F -e %s ", leaderf#Rg#visual())<CR>
 " noremap go :<C-U>Leaderf! rg --recall<CR>
-
-" " should use `Leaderf gtags --update` first
-" let g:Lf_GtagsAutoGenerate = 0
-" let g:Lf_Gtagslabel = 'native-pygments'
-" noremap <leader>fr :<C-U><C-R>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<CR><CR>
-" noremap <leader>fd :<C-U><C-R>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<CR><CR>
-" noremap <leader>fo :<C-U><C-R>=printf("Leaderf! gtags --recall %s", "")<CR><CR>
-" noremap <leader>fn :<C-U><C-R>=printf("Leaderf gtags --next %s", "")<CR><CR>
-" noremap <leader>fp :<C-U><C-R>=printf("Leaderf gtags --previous %s", "")<CR><CR>
-
 
 function! CUSTOMOpen(command_str)
   if (expand('%') =~# 'NERD_tree' && winnr('$') > 1)
@@ -477,7 +417,6 @@ function! CUSTOMOpen(command_str)
 endfunction
 
 "  telescope
-"
 " Find files using Telescope command-line sugar.
 " nnoremap <leader>ff <cmd>Telescope find_files<cr>
 " nnoremap <leader>fg <cmd>Telescope live_grep<cr>
@@ -489,7 +428,6 @@ nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files({layout_str
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep({layout_strategy='horizontal',layout_config={width=0.93}})<cr>
 nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers({layout_strategy='horizontal',layout_config={width=0.93}})<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags({layout_strategy='horizontal',layout_config={width=0.93}})<cr>
-
 
 " lua << END
 " telescope.setup {
@@ -582,33 +520,7 @@ hi clear EndOfBuffer
 " hi SignColumn guibg=NONE ctermbg=NONE
 hi clear SignColumn
 
-"some folding crap xd
-" set foldmethod=indent
-" set foldmethod=syntax
-" set foldlevel=1
-" set foldclose=all
-
-" using https://github.com/lukas-reineke/indent-blankline.nvim
-" highlight IndentBlanklineChar guifg=#98C379 gui=nocombine
-" highlight IndentBlanklineChar guifg=#a85389 gui=nocombine
-" highlight IndentBlanklineChar guifg=#944176 gui=nocombine
-
-
-"""""" dark themes """"""
-" highlight IndentBlanklineChar guifg=#813163 gui=nocombine
-" highlight IndentBlanklineChar guifg=#393939 gui=nocombine
-""""""" lisht themes """""""
-highlight IndentBlanklineChar guifg=#616163 gui=nocombine
-
-" highlight IndentBlanklineIndent1 guifg=#E06C75 gui=nocombine
-" highlight IndentBlanklineIndent2 guifg=#E5C07B gui=nocombine
-" highlight IndentBlanklineIndent3 guifg=#98C379 gui=nocombine
-" highlight IndentBlanklineIndent4 guifg=#56B6C2 gui=nocombine
-" highlight IndentBlanklineIndent5 guifg=#61AFEF gui=nocombine
-" highlight IndentBlanklineIndent6 guifg=#C678DD gui=nocombine
-
-" tagbar
-" let type_ts.ctagsbin = tstags
+highlight IndentBlanklineChar guifg=#515153 gui=nocombine
 
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
@@ -632,20 +544,67 @@ ensure_installed = {
 }
 EOF
 
-" lualine
-" component_separators = { left = '', right = ''},
-" section_separators = { left = '', right = ''},
-"     component_separators = { left = '', right = ''},
-"         section_separators = { left = '▓▒░', right = '░▒▓'},
+" BUFFERLINE
+set termguicolors
+lua << EOF
+require("bufferline").setup{
+  options={
+    mode = "tabs",
+    color_icons = true,
+    modified_icon = '●',
+    offsets = {
+        {
+            filetype = "NvimTree",
+            text = "File Explorer",
+            text_align = "left", 
+            separator = true
+        }
+    },
+    indicator = {
+        style = 'underline',
+    },
+    separator_style = "slant",
+    hover = {
+        enabled = true,
+        delay = 200,
+        reveal = {'close'}
+    }
+  }
+}
+EOF
 
-" set nospell
-" let g:zenburn_disable_Label_underline = 1
+
+"" asdad
+lua <<EOF
+-- chat gpt
+require("chatgpt").setup()
+EOF
+
+lua <<EOF
+-- chat gpt
+require("pommodoro-clock").setup()
+EOF
+
+
+" NVIM TREE 
+lua <<EOF
+-- examples for your init.lua
+-- disable netrw at the very start of your init.lua (strongly advised)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+-- set termguicolors to enable highlight groups
+vim.opt.termguicolors = true
+-- empty setup using defaults
+require("nvim-tree").setup()
+EOF
+
+
 
 lua << END
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = 'vscode',
+    theme = 'tokyonight',
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {},
@@ -679,84 +638,14 @@ END
 
 let g:vim_jsx_pretty_colorful_config = 1 " default 0
 
-" Set cursor line color on visual mode
-" highlight Visual cterm=NONE ctermbg=236 ctermfg=NONE guibg=Grey40
-" highlight LineNr cterm=none ctermfg=240 guifg=#2b506e guibg=#000000
-
-""""""""""""""""" lsp  """""""""""""""""
-" lua << EOF
-" local lspconfig = require("lspconfig")
-" local null_ls = require("null-ls")
-" local buf_map = function(bufnr, mode, lhs, rhs, opts)
-"   vim.api.nvim_buf_set_keymap(bufnr, mode, lhs, rhs, opts or {
-"   silent = true,
-" })
-" end
-" local on_attach = function(client, bufnr)
-"     vim.cmd("command! LspDef lua vim.lsp.buf.definition()")
-"     vim.cmd("command! LspFormatting lua vim.lsp.buf.formatting()")
-"     vim.cmd("command! LspCodeAction lua vim.lsp.buf.code_action()")
-"     vim.cmd("command! LspHover lua vim.lsp.buf.hover()")
-"     vim.cmd("command! LspRename lua vim.lsp.buf.rename()")
-"     vim.cmd("command! LspRefs lua vim.lsp.buf.references()")
-"     vim.cmd("command! LspTypeDef lua vim.lsp.buf.type_definition()")
-"     vim.cmd("command! LspImplementation lua vim.lsp.buf.implementation()")
-"     vim.cmd("command! LspDiagPrev lua vim.diagnostic.goto_prev()")
-"     vim.cmd("command! LspDiagNext lua vim.diagnostic.goto_next()")
-"     vim.cmd("command! LspDiagLine lua vim.diagnostic.open_float()")
-"     vim.cmd("command! LspSignatureHelp lua vim.lsp.buf.signature_help()")
-"     buf_map(bufnr, "n", "gd", ":LspDef<CR>")
-"     buf_map(bufnr, "n", "gr", ":LspRename<CR>")
-"     buf_map(bufnr, "n", "gy", ":LspTypeDef<CR>")
-"     buf_map(bufnr, "n", "K", ":LspHover<CR>")
-"     buf_map(bufnr, "n", "[a", ":LspDiagPrev<CR>")
-"     buf_map(bufnr, "n", "]a", ":LspDiagNext<CR>")
-"     buf_map(bufnr, "n", "ga", ":LspCodeAction<CR>")
-"     buf_map(bufnr, "n", "<Leader>a", ":LspDiagLine<CR>")
-"     buf_map(bufnr, "i", "<C-x><C-x>", "<cmd> LspSignatureHelp<CR>")
-"     if client.resolved_capabilities.document_formatting then
-"         vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
-"     end
-" end
-" lspconfig.tsserver.setup({
-"     on_attach = function(client, bufnr)
-"         client.resolved_capabilities.document_formatting = false
-"         client.resolved_capabilities.document_range_formatting = false
-"         local ts_utils = require("nvim-lsp-ts-utils")
-"         ts_utils.setup({})
-"         ts_utils.setup_client(client)
-"         buf_map(bufnr, "n", "gs", ":TSLspOrganize<CR>")
-"         buf_map(bufnr, "n", "gi", ":TSLspRenameFile<CR>")
-"         buf_map(bufnr, "n", "go", ":TSLspImportAll<CR>")
-"         on_attach(client, bufnr)
-"     end,
-" })
-" null_ls.setup({
-"     sources = {
-"         null_ls.builtins.diagnostics.eslint,
-"         null_ls.builtins.code_actions.eslint,
-"         null_ls.builtins.formatting.prettier,
-"     },
-"     on_attach = on_attach,
-" })
-
-" EOF
-
 set tags=./tags;,./gems.tags;
-
-
-""""""""""""""""""""""
-"""""" line for dark themes """"""
-" hi CursorLine ctermfg=White ctermbg=Yellow  guibg=#292929 
-" hi NormalFloat ctermbg=red ctermfg=black guibg=black  
-" hi Pmenu ctermfg=red ctermfg=black guibg=black
-
-""""""" line for light themes """""""
-" hi CursorLine  ctermbg=green  guibg=#d9d9d9 
-
 " hi CocFloating ctermbg=red ctermfg=black guibg=black  
 " hi CocErrorFloat ctermfg=red ctermfg=black
-hi wincolor ctermfg=red ctermfg=black  guibg=black
+
+" hi wincolor ctermfg=red ctermfg=black  guibg=black
 
 " highlight the visual selection after pressing enter.
 xnoremap <silent> <cr> "*y:silent! let searchTerm = '\V'.substitute(escape(@*, '\/'), "\n", '\\n', "g") <bar> let @/ = searchTerm <bar> echo '/'.@/ <bar> call histadd("search", searchTerm) <bar> set hls<cr>
+
+inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"
+" let g:coc_default_semantic_highlight

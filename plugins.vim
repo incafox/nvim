@@ -26,9 +26,6 @@ Plug 'neovim/nvim-lspconfig'
 "lsp ts
 Plug 'albingroen/nvim-lsp-typescript-config'
 
-" ctags xd ts 
-" Plug 'ludovicchabant/vim-gutentags'
-
 " GD with new tab (ctrl + ])
 " Plug 'ipod825/vim-tabdrop'
 
@@ -36,8 +33,6 @@ Plug 'albingroen/nvim-lsp-typescript-config'
 Plug 'majutsushi/tagbar'
 " Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 
-" Denite - Fuzzy finding, buffer management
-" Plug 'Shougo/denite.nvim'
 if has('nvim')
   Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 else
@@ -58,7 +53,8 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'sainnhe/everforest'
 Plug 'doums/darcula'
 Plug 'drewtempelmeyer/palenight.vim'
-Plug 'ghifarit53/tokyonight-vim'
+" Plug 'ghifarit53/tokyonight-vim'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'jacoborus/tender.vim'
 Plug 'embark-theme/vim', { 'as': 'embark' }
 Plug 'tiagovla/tokyodark.nvim'
@@ -84,16 +80,22 @@ Plug 'cormacrelf/vim-colors-github'
 Plug 'projekt0n/github-nvim-theme'
 Plug 'drewtempelmeyer/palenight.vim'
 
+Plug 'loctvl842/monokai-pro.nvim'
+
+" bufferfile 
+Plug 'nvim-tree/nvim-web-devicons' " Recommended (for coloured icons)
+" Plug 'ryanoasis/vim-devicons' Icons without colours
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
+
+"nvim tree 
+Plug 'nvim-tree/nvim-tree.lua'
+
 " vs code
 Plug 'tomasiser/vim-code-dark'
 Plug 'Mofiqul/vscode.nvim'
 
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
-
-" vim keyword
-" Plug 'pangloss/vim-javascript'
-" Plug 'HerringtonDarkholme/yats.vim'
 
 "icons
 Plug 'ryanoasis/vim-devicons'
@@ -102,15 +104,19 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-commentary'
 
-"spotify xd
-" Plug 'srishanbhattarai/neovim-spotify', { 'do': 'bash install.sh', 'on': ['Spotify'] }
-" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 "
 Plug 'nvim-treesitter/playground'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-" Tree
-Plug 'scrooloose/nerdtree'
-Plug 'unkiwii/vim-nerdtree-sync'
+
+Plug 'nvim-lua/plenary.nvim'
+
+Plug 'MunifTanjim/nui.nvim'
+
+Plug 'jackMort/ChatGPT.nvim'
+
+" pomodoro
+Plug 'MunifTanjim/nui.nvim'
+Plug 'jackMort/pommodoro-clock.nvim'
 
 " typing
 " Plug 'alvan/vim-closetag'
@@ -120,18 +126,9 @@ Plug 'unkiwii/vim-nerdtree-sync'
 " polyglot
 Plug 'herringtondarkholme/yats.vim'
 
-" tmux
-" Plug 'benmills/vimux'
-" Plug 'christoomey/vim-tmux-navigator'
-
-" autocomplete
-" Plug 'sirver/ultisnips'
-" Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
-" IDE
-" Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 " Plug 'terryma/vim-multiple-cursors'
@@ -151,14 +148,6 @@ Plug 'tpope/vim-repeat'
 
 " golang
 Plug 'fatih/vim-go'
-" Plug 'vim-jp/vim-go-extra'
-" Plug 'xolox/vim-easytags'  
-" Plug 'xolox/vim-misc'
-"
-" react
-" Plug 'yuezk/vim-js'
-" Plug 'maxmellon/vim-jsx-pretty'
-"
 "ts 
 Plug 'leafgarland/typescript-vim' " TypeScript syntax
 
